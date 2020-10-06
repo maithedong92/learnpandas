@@ -15,9 +15,6 @@ print(lenlen)
 print('-------------*******-------------')
 #them hoac xoa cot du lieu
 #nam sinh tinh bang cach lay 2000 - ext*2, bo qua nhung o trong
-print('them mot cot du lieu - nam sinh')
-print('--------------------------')
-
 
 birth_year = [(2020 - filecsv.fillna(2020).iloc[i].Ext*2 + 1) for i in range(lenlen)]
 filecsv["NamSinh"] = birth_year
@@ -28,3 +25,12 @@ print('--------------------------')
 birthday = [random.randrange(1980, 2000, 1) for i in range(lenlen)]
 filecsv['birthday'] = birthday
 print(filecsv.tail(5))
+print(birthday)
+
+print('-------------*******-------------')
+print('them mot cot du lieu - nam sinh 3')
+birthday2 = 0
+birthday3 = []
+for i in range(lenlen):
+	birthday2 +=i
+print(birthday2)
