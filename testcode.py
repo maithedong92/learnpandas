@@ -29,8 +29,10 @@ print(birthday)
 
 print('-------------*******-------------')
 print('them mot cot du lieu - nam sinh 3')
-birthday2 = 0
+birthday2 = []
 birthday3 = []
 for i in range(lenlen):
-	birthday2 +=i
+	birthday3.append(i)
+filecsv['birthday3'] = birthday3
+print(filecsv.tail(5))
 print(birthday2)
